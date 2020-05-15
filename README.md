@@ -1,6 +1,6 @@
 # clx
 
-A new Flutter project.
+A A simple hello world in Flutter based in MarketPlace app interface.
 
 ## Getting Started
 
