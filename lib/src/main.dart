@@ -12,19 +12,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Color(0xFF234894),
-        accentColor: Colors.white,
+        primaryColor: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Hello World'),
     );
   }
 }
-
-
-
-
-
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -34,7 +28,6 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
-
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
@@ -52,23 +45,19 @@ class _MyHomePageState extends State<MyHomePage> {
           ListItem(
             tag: 'image',
           ),
-          ListItem(
-            tag: 'image2'
-          ),
-          ListItem(
-            tag: 'image3'
-          ),
+          ListItem(tag: 'image2'),
+          ListItem(tag: 'image3'),
         ],
       ),
       drawer: Drawer(),
-      
+
       floatingActionButton: FloatingActionButton(
         backgroundColor: Theme.of(context).primaryColor,
         onPressed: () {},
         tooltip: 'Increment',
         child: Icon(
           Icons.add,
-          color: Theme.of(context).accentColor,
+          color: Colors.white,
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
